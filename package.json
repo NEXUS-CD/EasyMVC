@@ -1,0 +1,15 @@
+{
+  "name": "EasyMVC",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/commands/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^10.0.1"
+  }
+}
