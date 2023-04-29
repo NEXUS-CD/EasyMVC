@@ -3,15 +3,11 @@
   - bin
     - main       // 入口文件
   - lib
-    - commands
-      - index.js      // Commder命令入口文件
-      - command1.js   // Commder命令1
-      - command2.js   // Commder命令2
-      - ...
-    - questions
-      - index.js      // Inqruie问题入口文件
-      - questions1.js // Inqruie问题1
-      - questions2.js // Inqruie问题2
-      - ...
+    - commands       //commder命令
+    - questions       //inquirer所需数据
   - package.json       // 项目配置文件
   - README.md          // 项目说明文件
+  - .npmignore          //npm发布时，忽略文件
+
+# 使用说明
+
