@@ -142,3 +142,18 @@ export function writeRouterFile(filepath, info: IpromptInfo, routerContent, succ
     writeFile(filepath, str)
 }
 
+
+/**
+ * @description: 接受原文件内容，在文件最后 }之前添加内容
+ * @param {*} originalContent
+ * @param {*} additionalContent
+ * @return {*}
+ */
+export function appendToFile(originalContent, additionalContent) {
+    const closingBracketIndex = originalContent.lastIndexOf('}');
+    if (closingBracketIndex !== -1) {
+      return originalContent.substring(0, closingBracketIndex) + additionalContent + originalContent.substring(closingBracketIndex);
+    } 
+    throw "appendToFile函数内部错误"
+  }
+  
